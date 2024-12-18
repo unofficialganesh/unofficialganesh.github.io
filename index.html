@@ -7,80 +7,92 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">Cyber<span>Expert</span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <h1 class="logo">Cyber<span>Expert</span></h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home">
-        <div class="hero-content">
-            <h1>I'm <span>Ganesh Kadam</span></h1>
-            <p>Certified Cybersecurity Expert | Ethical Hacker | Network Security Specialist</p>
-            <a href="#contact" class="btn">Hire Me</a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Ganesh Kadam</span></h1>
+                <p>Certified Cybersecurity Expert | Ethical Hacker | Network Security Specialist</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I’m a certified cybersecurity expert with a passion for ethical hacking, penetration testing, and securing systems.
-            I’ve worked on real-world projects, protecting organizations from cyber threats.
-        </p>
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p>
+                I’m a certified cybersecurity expert with a passion for ethical hacking, penetration testing, and securing systems. 
+                I help organizations protect their valuable data from cyber threats.
+            </p>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>Networking</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-user-secret"></i>
-                <h3>Ethical Hacking</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Cybersecurity</h3>
+        <div class="section-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Networking</h3>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h3>Ethical Hacking</h3>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Cybersecurity</h3>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Penetration Testing</h3>
-            <p>Conducted penetration testing for corporate systems to identify and resolve vulnerabilities.</p>
-        </div>
-        <div class="project">
-            <h3>Network Security Setup</h3>
-            <p>Designed and implemented secure network architectures using firewalls and monitoring tools.</p>
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Penetration Testing</h3>
+                <p>Identified and mitigated vulnerabilities for corporate clients.</p>
+            </div>
+            <div class="project">
+                <h3>Network Security Setup</h3>
+                <p>Designed secure networks for businesses, implementing firewalls and monitoring systems.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:ganeshkadam@example.com">ganeshkadam@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com">linkedin.com/in/ganeshkadam</a></p>
+        <div class="section-container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:ganeshkadam@example.com">ganeshkadam@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com">linkedin.com/in/ganeshkadam</a></p>
+        </div>
     </section>
 
     <!-- Footer -->
