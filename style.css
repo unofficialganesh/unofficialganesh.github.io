@@ -3,86 +3,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #111;
+    background-color: #121212;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* Header */
 header {
-    background: #222;
-    padding: 1rem;
     position: fixed;
+    top: 0;
     width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
+    padding: 1rem;
 }
 
-header nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
-    font-size: 1.5rem;
+.logo {
+    font-size: 1.8rem;
     font-weight: bold;
     color: cyan;
 }
 
-header ul {
+nav ul {
     list-style: none;
     display: flex;
 }
 
-header ul li {
+nav ul li {
     margin-left: 1.5rem;
 }
 
-header ul li a {
-    text-decoration: none;
+nav ul li a {
     color: #fff;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
-header ul li a:hover {
+nav ul li a:hover {
     color: cyan;
 }
 
 /* Hero Section */
 #home {
     height: 100vh;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hero-text h1 {
+    font-size: 3.5rem;
 }
 
-.hero-container .text h2 {
-    font-size: 3rem;
+.hero-text span {
+    color: cyan;
 }
 
-.hero-container .text p {
+.hero-text p {
     margin: 1rem 0;
     font-size: 1.2rem;
 }
 
-.hero-container img {
-    max-width: 300px;
-    border-radius: 50%;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: cyan;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-/* About */
-#about, #skills, #projects, #contact {
-    padding: 3rem 2rem;
+.btn:hover {
+    background-color: #00a0a0;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
     text-align: center;
 }
 
@@ -90,7 +103,6 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .skill i {
@@ -98,13 +110,10 @@ header ul li a:hover {
     color: cyan;
 }
 
-.skill h3 {
-    margin-top: 1rem;
-}
-
 /* Footer */
 footer {
-    background: #222;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
 }
